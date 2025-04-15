@@ -3,7 +3,7 @@
 Welcome to **Encoder-Decoder File**, a lightweight and secure web application that allows users to **encrypt** and **decrypt** any file using a **custom key**. This app ensures your sensitive data remains protected – whether it's for local use or cloud storage. Built using modern web technologies with simplicity and speed in mind.
 </br>
 </br>
-[Live Preview💻](https://encoder-decoder-file.vercel.app/)
+[Live Preview💻](https://file-cryptography-encryption.vercel.app/)
 
 ## 🚀 Features
 
@@ -24,7 +24,7 @@ Welcome to **Encoder-Decoder File**, a lightweight and secure web application th
 ### 🔧 Step 1: Clone the Repository
 ```bash
 // Step 1:
-git clone https://github.com/deepakcode21/encoder-decoder-file.git
+git clone https://github.com/deepakcode21/file-cryptography-encryption.git
 cd encoder-decoder-file
 
 // Step 2:
@@ -51,7 +51,7 @@ npm run dev
 ## 🚀 Deployment
 
 Host instantly on:
-[Deploy on Vercel](https://encoder-decoder-file.vercel.app/)
+[Deploy on Vercel](https://file-cryptography-encryption.vercel.app/)
 
 ## 🔐 Security Note
 
