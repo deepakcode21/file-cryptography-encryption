@@ -5,6 +5,24 @@ Welcome to **Encoder-Decoder File**, a lightweight and secure web application th
 </br>
 [Live Preview💻](https://file-cryptography-encryption.vercel.app/)
 
+
+
+## 🖼️ UI Preview
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/1bace2fc-cb2a-490d-87d7-4807ff5a88b8" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/a781abde-3fdc-4f19-a85f-2c421ac57251" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/0cef8a34-566a-4ea1-ac86-290d76647cbb" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/152261d2-cb47-48a9-aedd-4139cc3dd80d" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f7d22f04-be41-42af-a456-ea24fb5d0ade" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/34419f47-2803-4955-a990-a56cd1739e6d" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/c8ca6fbc-55d1-4abb-983c-c085513e2f12" width="100%"/></td>
+  </tr>
+</table>
+
 ## 🚀 Features
 
 - 🔑 **Custom Key Encryption** – Encrypt your file using your own secret key.
