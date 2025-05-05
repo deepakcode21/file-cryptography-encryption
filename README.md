@@ -1,11 +1,8 @@
 # 🔐 Encoder-Decoder File (SecureVault)
 
-Welcome to **Encoder-Decoder File**, a lightweight and secure web application that allows users to **encrypt** and **decrypt** any file using a **custom key**. This app ensures your sensitive data remains protected – whether it's for local use or cloud storage. Built using modern web technologies with simplicity and speed in mind.
-</br>
-</br>
+A lightweight and secure web application that allows users to encrypt and decrypt **any file** using a custom key. All operations are done **client-side (in browser)** or securely handled on the **backend**, ensuring your sensitive data remains protected.
+
 [Live Preview💻](https://file-cryptography-encryption.vercel.app/)
-
-
 
 ## 🖼️ UI Preview
 
@@ -26,16 +23,21 @@ Welcome to **Encoder-Decoder File**, a lightweight and secure web application th
 ## 🚀 Features
 
 - 🔑 **Custom Key Encryption** – Encrypt your file using your own secret key.
-- 🔓 **Optional Decryption Without Key** – You can decrypt files even if you skip the key (if allowed).
-- 💡 **Client-side Encryption** – All processes happen in the browser. Your file never leaves your device!
-- 🧠 **Simple UI/UX** – Minimalist interface for quick and easy usage.
-- 📂 Supports all file types – PDF, DOCX, TXT, MP4, PNG, and more.
+- 🔓 **Decryption with or without key** – If encryption was done without a key, decryption won't require one.
+- 🧠 **Simple UI/UX** – Built for speed and usability.
+- 📂 **Supports All File Types** – PDF, DOCX, MP4, PNG, TXT, etc.
+- 🔐 **AES-256-CBC Encryption** – Strong and secure industry-standard encryption.
+- 💻 **Backend-Powered Security** – Secure operations handled using Node.js & Crypto module.
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js, Tailwindcss
-- **Backend**: Node.js, Express.js
-- **Crypto**: Web Crypto API for secure encryption algorithms
+| Layer     | Technology                         |
+|-----------|------------------------------------|
+| Frontend  | React.js, Tailwind CSS             |
+| Backend   | Node.js, Express.js                |
+| Database  | MongoDB (via Mongoose)             |
+| Crypto    | AES-256-CBC via Node.js `crypto`   |
+| UUID      | `uuid` for file identifiers        |
 
 ## 📥 How to Use
 
@@ -71,11 +73,16 @@ npm run dev
 Host instantly on:
 [Deploy on Vercel](https://file-cryptography-encryption.vercel.app/)
 
-## 🔐 Security Note
+## 🛡️ Security Note
 
-This app uses **AES-GCM** via the **Web Crypto API** and works entirely client-side – your files never leave your device. 
+Uses AES-256-CBC with secure key derivation (PBKDF2 + salt + IV)
+- Files are encrypted with a combination of:
+- Random salt (to derive the key)
+-- Random iv (for cipher variation)
+-- Only encrypted data + metadata is stored. Your actual file is never exposed.
+- Files are never shared publicly or stored insecurely 
 
-⚠️ **Important**: Always test encryption thoroughly before using for critical data. Not responsible for data loss.
+⚠️ **Important**: Always test the encryption/decryption process with dummy data before using it for critical files. The author is not responsible for any data loss.
 
 ## 🤝 Contributing
 
